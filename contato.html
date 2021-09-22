@@ -16,38 +16,50 @@
     </ul><br>
 
     <h1 class="center">Fale conosco</h1>
+
     <div class="container">
         <div>
             <h2>Mande uma mensagem</h2>
             <form>
-                <label for="nome">Nome:</label>
-                <input type="text" name="id="><br><br>
-        
-                <label for="email">Email:</label>
-                <input type="text" email="id"><br><br>
-        
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" onkeyup= 'validaNome()'>
+                <div id='txtNome'></div>
+                <br>        
+                <label for="email">Email:</label><br>
+                <input type="text" id= "email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
+                <br>        
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="80" rows="10"></textarea><br>
-                <button>Enviar</button>
-                </form>      
-           
-    <p>
-        Rathmines Road, 145
-        Dublin 6 p>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!4v1631904185601!6m8!1m7!1ssyWlDgvb8y9w9XqhGcNF9Q!2m2!1d53.32548788046893!2d-6.265073644084839!3f106.29!4f0!5f0.7820865974627469" width="400" height="250" style=000000000"border:0;" allowfullscreen="" loading="lazy"></iframe>      
-             
-        
-                <ul>
-        
-                    <li><a href="https://api.whatsapp.com/send?phone=+5511964997862">whatsapp</a></li>
-                </ul>
-    </p>       
-            
-                
-               
-             </div>
+                <textarea name="assunto" id="assunto" cols="80" rows="10" onkeyup='validaAssunto()'></textarea>
+                <div id='txtAssunto'></div>
+                <br>
+                <br>
+                <button onclick=" enviar()">Enviar</button>
+            </form>  
+        </div>
+       
+    
+       <div class="container">
+        <div class="p-30">
+            <p>
+                Rathmines Road, 145 <br>
+                Dublin 6
       
+              </p>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1631904185601!6m8!1m7!1ssyWlDgvb8y9w9XqhGcNF9Q!2m2!1d53.32548788046893!2d-6.265073644084839!3f106.29!4f0!5f0.7820865974627469" width="400" height="250" style=000000000"border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>      
+       
+                     
+        </div>
+        
+    <script src="assets/js/script.js"></script>  
+    
+            
+      
+                  
+               
+
+    
+
     
 </body>
 </html>
